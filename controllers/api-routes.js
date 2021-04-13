@@ -13,5 +13,22 @@ module.exports = function (app) {
       });
   });
 
-  app.put("/api/workouts/:id", (req, res) => {});
+  app.put("/api/workouts/:id", (req, res) => {
+    db.Workout.updateOne(
+      {
+        _id: req.params.id,
+      },
+      {
+        $push: {
+          exercises: req.body,
+        },
+      }
+    )
+      .then((dbWorkout) => {
+        res.json(dbWorkout);
+      })
+      .catch((err) => {
+        res.status(400);
+      });
+  });
 };
