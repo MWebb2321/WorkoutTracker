@@ -31,4 +31,16 @@ module.exports = function (app) {
         res.status(400);
       });
   });
+
+  app.post("/api/workouts", ({ body }, res) => {
+    db.Workout.create(body)
+      .then((dbWorkout) => {
+        res.json(dbWorkout);
+      })
+      .catch((err) => {
+        res.status(400);
+      });
+  });
+
+  app.get;
 };
