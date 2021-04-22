@@ -1,61 +1,70 @@
-# Unit 17 NoSQL Homework: Workout Tracker
+# Workout Tracker!!
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+# Description
 
-## User Story
+Allows you to track your workouts and graph the results!
 
-- As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+<img width="927" alt="image" src="">
 
-## Business Context
+Graph your workout history!
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+<img width="928" alt="image" src="">
 
-## Acceptance Criteria
+# Repo Link
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+> https://github.com/MWebb2321/WorkoutTracker
 
-The user should be able to:
+# Heroku Link
 
-- Add exercises to the most recent workout plan.
+>
 
-- Add new exercises to a new workout plan.
+# Table of Contents
 
-- View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+1. [Installation](##Installation)
+2. [Usage](##Usage)
+3. [License](##License)
+4. [Technology](##Technology)
+5. [Contributing](##Contributing)
+6. [Tests](##Tests)
+7. [Questions](##Questions)
 
-- View the total duration of each workout from the past seven workouts on the `stats` page.
+## Installation
 
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
+Clone the repo with the following command
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+> git clone https://github.com/Mwebb2321/WorkoutTracker
 
-- [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+Run the following command
 
-- [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+> npm install
 
-## Commit Early and Often
+## Usage
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+To execute this tool
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+> npm run start
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+## Technology
 
-Follow these guidelines for committing:
+This project uses the following technology
 
-- Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+> HTML 5
+> JQuery
+> Express
+> Express-Session
+> MongoDB
+> BootStrap
 
-- Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+## License
 
-- Don't commit half-done work, for the sake of your collaborators (and your future self!).
+This project is licensed under the terms of the **MIT** license.
 
-- Test your application before you commit to ensure functionality at every step in the development process.
+## Tests
 
-We want you to have well over 200 commits by graduation, so commit early and often!
+Enter the following command
 
-## Submission on BCS
+> npm run test
 
-You are required to submit the following:
+## Questions
 
-- The URL to the deployed application
-
-- The URL to the GitHub repository
+Please direct your questions to MWebb2321

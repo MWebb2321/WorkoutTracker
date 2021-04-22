@@ -9,7 +9,39 @@ const WorkoutSchema = new Schema(
       type: Number,
       default: new Date(),
     },
-    exercise: Array,
+    exercises: [
+      {
+        type: {
+          type: String,
+          required: true,
+          enum: ["cardio", "resistance"],
+        },
+        name: {
+          type: String,
+          required: true,
+        },
+        duration: {
+          type: Number,
+          required: true,
+        },
+        weight: {
+          type: Number,
+          required: false,
+        },
+        reps: {
+          type: Number,
+          required: false,
+        },
+        sets: {
+          type: Number,
+          required: false,
+        },
+        distance: {
+          type: Number,
+          required: false,
+        },
+      },
+    ],
   },
   {
     versionKey: false,

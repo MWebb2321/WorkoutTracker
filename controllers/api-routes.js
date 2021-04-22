@@ -14,6 +14,7 @@ module.exports = function (app) {
   });
 
   app.put("/api/workouts/:id", (req, res) => {
+    console.log(req.body);
     db.Workout.updateOne(
       {
         _id: req.params.id,
@@ -44,6 +45,9 @@ module.exports = function (app) {
 
   app.get("/api/workouts/range", (req, res) => {
     db.Workout.find({})
+      .sort({ day: -1 })
+      .limit(7)
+      .sort({ day: 1 })
       .then((dbWorkout) => {
         res.json(dbWorkout);
       })
