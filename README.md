@@ -4,11 +4,11 @@
 
 Allows you to track your workouts and graph the results!
 
-<img width="927" alt="image" src="">
+<img width="927" alt="image" src="/FitnessTracker.png">
 
 Graph your workout history!
 
-<img width="928" alt="image" src="">
+<img width="928" alt="image" src="/FTDashboard.png">
 
 # Repo Link
 
